@@ -32,9 +32,45 @@
     <![endif]-->
     <!-- Main CSS File -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function() { 
+            
+            $("#nyjobs").hide();
+            $("#lajobs").hide();
+            $("#detjobs").hide();
 
-</head>
+            $("#all").click(function() {
+                $("#nyjobs").show();
+                $("#lajobs").show();
+                $("#detjobs").show();
+            });
 
+            $("#ny").click(function() {
+                $("#lajobs").hide();
+                $("#detjobs").hide();
+                $("#nyjobs").show();
+            });
+
+            $("#la").click(function() {
+                $("#detjobs").hide();
+                $("#nyjobs").hide();
+                $("#lajobs").show();
+            });
+
+            $("#det").click(function() {
+                $("#lajobs").hide();
+                $("#nyjobs").hide();
+                $("#detjobs").show();
+            });
+        });
+
+    </script>
+    
+</head>    
+    
 <body id="page-top" class="index">
 
     <!-- Navigation -->
@@ -89,17 +125,44 @@
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Job Listings</h2>
                     <br />
-                    <h3 id="all" class="col-lg-3 section-heading">ALL</h3>
-                    <h3 id="ny" class="col-lg-3 section-heading">NY</h3>
-                    <h3 id="la" class="col-lg-3 section-heading">LA</h3>
-                    <h3 id="det" class="col-lg-3 section-heading">DET</h3>
+                    <button id="all" class="col-lg-3 section-heading">ALL</button>
+                    <button id="ny" class="col-lg-3 section-heading">NY</button>
+                    <button id="la" class="col-lg-3 section-heading">LA</button>
+                    <button id="det" class="col-lg-3 section-heading">DET</button>
                 </div>
+            </div>
+            
+            
+            <div id="nyjobs">
+                <ul>
+                    <li>CTO</li>
+                    <li>Senior Editor</li>
+                    <li>Software Engineer</li>
+                </ul>
+            </div>
+
+            <div id="lajobs">
+                <ul>
+                    <li>Stylist</li>
+                    <li>Photographer</li>
+                    <li>Junior Editor</li>
+                </ul>
+            </div>
+
+            <div id="detjobs">
+                <ul>
+                    <li>Videographer</li>
+                    <li>Executive Assistant</li>
+                    <li>General Manager</li>
+                </ul>
             </div>
             
             
         </div>
     </section>
+    
 
+    
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
