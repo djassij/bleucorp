@@ -24,20 +24,3 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
     $('.navbar-toggle:visible').click();
 });
-
-//On click function for the careers page
-$("#all").click(function(){
-    $("body").append("alljobs.html");
-});
-
-$("#ny").click(function(){
-    $("body").append("<b>Appended text</b>");
-});
-
-$("#la").click(function(){
-    $("body").append("<b>Appended text</b>");
-});
-
-$("#det").click(function(){
-    $("body").append("<b>Appended text</b>");
-});
