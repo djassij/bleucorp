@@ -38,14 +38,14 @@
     <script>
         $(document).ready(function() { 
             
-            $("#nyjobs").hide();
             $("#lajobs").hide();
             $("#detjobs").hide();
+            $("#nyjobs").hide();
 
             $("#all").click(function() {
-                $("#nyjobs").show();
                 $("#lajobs").show();
                 $("#detjobs").show();
+                $("#nyjobs").show();
             });
 
             $("#ny").click(function() {
@@ -132,31 +132,26 @@
                 </div>
             </div>
             
-            
-            <div id="nyjobs">
-                <ul>
-                    <li>CTO</li>
-                    <li>Senior Editor</li>
-                    <li>Software Engineer</li>
+            <div id="joblist" class="container">
+                <br />
+                <ul id="nyjobs" class="list-group">
+                    <li class="list-group-item">CTO</li>
+                    <li class="list-group-item">Senior Editor</li>
+                    <li class="list-group-item">Software Engineer</li>
                 </ul>
-            </div>
 
-            <div id="lajobs">
-                <ul>
-                    <li>Stylist</li>
-                    <li>Photographer</li>
-                    <li>Junior Editor</li>
+                <ul id="lajobs" class="list-group">
+                    <li class="list-group-item">Stylist</li>
+                    <li class="list-group-item">Photographer</li>
+                    <li class="list-group-item">Junior Editor</li>
                 </ul>
-            </div>
 
-            <div id="detjobs">
-                <ul>
-                    <li>Videographer</li>
-                    <li>Executive Assistant</li>
-                    <li>General Manager</li>
+                <ul id="detjobs" class="list-group">
+                    <li class="list-group-item">Videographer</li>
+                    <li class="list-group-item">Executive Assistant</li>
+                    <li class="list-group-item">General Manager</li>
                 </ul>
-            </div>
-              
+            </div>     
         </div>
     </section>
     
