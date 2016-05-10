@@ -25,33 +25,33 @@ $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-//Job Listing Display Functions
-$(document).ready(function() {         
-    $("#lajobs").hide();
-    $("#detjobs").hide();
-    $("#nyjobs").hide();
-
-    $("#all").click(function() {
-        $("#lajobs").show();
-        $("#detjobs").show();
-        $("#nyjobs").show();
-    });
-
-    $("#ny").click(function() {
-        $("#lajobs").hide();
-        $("#detjobs").hide();
-        $("#nyjobs").show();
-    });
-
-    $("#la").click(function() {
-        $("#detjobs").hide();
-        $("#nyjobs").hide();
-        $("#lajobs").show();
-    });
-
-    $("#det").click(function() {
-        $("#lajobs").hide();
-        $("#nyjobs").hide();
-        $("#detjobs").show();
-    });
-});
+////Job Listing Display Functions
+//$(document).ready(function() {         
+//    $("#lajobs").hide();
+//    $("#detjobs").hide();
+//    $("#nyjobs").hide();
+//
+//    $("#all").click(function() {
+//        $("#lajobs").show();
+//        $("#detjobs").show();
+//        $("#nyjobs").show();
+//    });
+//
+//    $("#ny").click(function() {
+//        $("#lajobs").hide();
+//        $("#detjobs").hide();
+//        $("#nyjobs").show();
+//    });
+//
+//    $("#la").click(function() {
+//        $("#detjobs").hide();
+//        $("#nyjobs").hide();
+//        $("#lajobs").show();
+//    });
+//
+//    $("#det").click(function() {
+//        $("#lajobs").hide();
+//        $("#nyjobs").hide();
+//        $("#detjobs").show();
+//    });
+//});
